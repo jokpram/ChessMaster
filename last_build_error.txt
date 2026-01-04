@@ -1,0 +1,134 @@
+.\gradlew.bat : WARNING: A 
+restricted method in 
+java.lang.System has been 
+called
+At line:1 char:1
++ .\gradlew.bat 
+createSetupExe 
+--console=plain 2>&1 | 
+Out-File -FilePat ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (WARNI  
+  NG: A rest...has been c   
+ alled:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+WARNING: 
+java.lang.System::load has 
+been called by net.rubygrape
+fruit.platform.internal.Nati
+veLibraryLoader in an 
+unnamed module (file:/C:/Use
+rs/ASUS/.gradle/wrapper/dist
+s/gradle-9.2.1-bin/2t0n5ozlw
+9xmuyvbp7dnzaxug/gradle-9.2.
+1/lib/native-platform-0.22-m
+ilestone-29.jar)
+WARNING: Use --enable-native
+-access=ALL-UNNAMED to 
+avoid a warning for callers 
+in this module
+WARNING: Restricted methods 
+will be blocked in a future 
+release unless native 
+access is enabled
+
+
+> Task :app:compileJava
+C:\KALIADMIN\aplikasiedane\a
+pp\src\main\java\com\chessma
+ster\view\MenuBarView.java:6
+8: error: package 
+ChessEngine does not exist
+    private void 
+addDiffItem(JMenu menu, 
+ButtonGroup group, String 
+label, 
+ChessEngine.Difficulty 
+diff, boolean selected) {
+                            
+                            
+                            
+ ^
+C:\KALIADMIN\aplikasiedane\a
+pp\src\main\java\com\chessma
+ster\view\MenuBarView.java:4
+9: error: package 
+ChessEngine does not exist
+        
+addDiffItem(diffMenu, 
+diffGroup, "Easy", ChessEngi
+ne.Difficulty.EASY, false);
+                            
+                            
+    ^
+C:\KALIADMIN\aplikasiedane\a
+pp\src\main\java\com\chessma
+ster\view\MenuBarView.java:5
+0: error: package 
+ChessEngine does not exist
+        
+addDiffItem(diffMenu, 
+diffGroup, "Medium", ChessEn
+gine.Difficulty.MEDIUM, 
+true);
+                            
+                            
+      ^
+C:\KALIADMIN\aplikasiedane\a
+pp\src\main\java\com\chessma
+ster\view\MenuBarView.java:5
+1: error: package 
+ChessEngine does not exist
+        
+addDiffItem(diffMenu, 
+diffGroup, "Hard", ChessEngi
+ne.Difficulty.HARD, false);
+                            
+                            
+    ^
+4 errors
+
+> Task :app:compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/KALIADMIN/aplikasiedane/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with 
+an exception.
+
+* What went wrong:
+Execution failed for task 
+':app:compileJava'.
+> Compilation failed; see 
+the compiler output below.
+  C:\KALIADMIN\aplikasiedane
+\app\src\main\java\com\chess
+master\view\MenuBarView.java
+:68: error: package 
+ChessEngine does not exist
+      private void 
+addDiffItem(JMenu menu, 
+ButtonGroup group, String 
+label, 
+ChessEngine.Difficulty 
+diff, boolean selected) {
+                            
+                            
+                            
+   ^
+  4 errors
+
+* Try:
+> Check your code and 
+dependencies to fix the 
+compilation error(s)
+> Run with --scan to 
+generate a Build Scan 
+(powered by Develocity).
+
+BUILD FAILED in 10s
+1 actionable task: 1 executed

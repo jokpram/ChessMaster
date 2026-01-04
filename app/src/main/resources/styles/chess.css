@@ -1,0 +1,297 @@
+/*
+ * ChessMaster Pro - Premium Chess Game Stylesheet
+ * Modern, elegant design with gradient and shadow effects
+ */
+
+/* ===== ROOT & GLOBAL STYLES ===== */
+.root {
+    -fx-font-family: 'Segoe UI', 'Arial', sans-serif;
+    -fx-base: #1a1a2e;
+    -fx-accent: #e94560;
+    -fx-focus-color: #e94560;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.main-container {
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+}
+
+.center-content {
+    -fx-background-color: transparent;
+}
+
+/* ===== MENU BAR ===== */
+.app-menu-bar {
+    -fx-background-color: linear-gradient(to right, #1a1a2e, #16213e);
+    -fx-padding: 5px 10px;
+}
+
+.app-menu-bar .menu {
+    -fx-background-color: transparent;
+}
+
+.app-menu-bar .menu .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+.app-menu-bar .menu:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 5px;
+}
+
+.app-menu-bar .menu:showing {
+    -fx-background-color: rgba(233, 69, 96, 0.3);
+    -fx-background-radius: 5px;
+}
+
+.menu-item {
+    -fx-background-color: #1a1a2e;
+    -fx-padding: 8px 20px;
+}
+
+.menu-item .label {
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused {
+    -fx-background-color: #e94560;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-background-color: #1a1a2e;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 15, 0, 0, 5);
+}
+
+.radio-menu-item:selected .label {
+    -fx-text-fill: #e94560;
+}
+
+.separator {
+    -fx-background-color: #3a3a5e;
+}
+
+/* ===== CHESS BOARD ===== */
+.chess-board-container {
+    -fx-alignment: center;
+}
+
+.board-wrapper {
+    -fx-background-color: #4a3728;
+    -fx-background-radius: 5px;
+    -fx-padding: 3px;
+}
+
+.chess-board {
+    -fx-background-color: #654321;
+    -fx-background-radius: 3px;
+}
+
+.board-label {
+    -fx-text-fill: #b0a090;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: 'Consolas', monospace;
+}
+
+/* ===== INFO PANEL ===== */
+.info-panel {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a252f);
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+}
+
+.panel-title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(233,69,96,0.5), 10, 0, 0, 0);
+}
+
+.section-title {
+    -fx-text-fill: #a0a0a0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.turn-indicator {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.status-label {
+    -fx-text-fill: #b0b0b0;
+    -fx-font-size: 14px;
+}
+
+.captured-section {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+}
+
+.history-section {
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+}
+
+/* ===== SCROLL PANE ===== */
+.move-history-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.move-history-scroll .viewport {
+    -fx-background-color: transparent;
+}
+
+.move-history-scroll .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.move-history-scroll .scroll-bar:vertical .track {
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+    -fx-background-radius: 4px;
+}
+
+.move-history-scroll .scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-background-radius: 4px;
+}
+
+.move-history-scroll .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== BUTTONS ===== */
+.button {
+    -fx-background-color: #e94560;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ff6b8a;
+    -fx-effect: dropshadow(gaussian, rgba(233,69,96,0.5), 10, 0, 0, 3);
+}
+
+.button:pressed {
+    -fx-background-color: #c73e54;
+}
+
+/* ===== COMBO BOX ===== */
+.mode-selector {
+    -fx-background-color: #3a3a5e;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 8px 15px;
+    -fx-background-radius: 8px;
+}
+
+.mode-selector .list-cell {
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.mode-selector .arrow {
+    -fx-background-color: white;
+}
+
+.mode-selector .combo-box-popup .list-view {
+    -fx-background-color: #2a2a4e;
+    -fx-background-radius: 8px;
+}
+
+.mode-selector .combo-box-popup .list-view .list-cell {
+    -fx-background-color: #2a2a4e;
+    -fx-text-fill: white;
+    -fx-padding: 8px 15px;
+}
+
+.mode-selector .combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #4a4a6e;
+}
+
+.mode-selector .combo-box-popup .list-view .list-cell:selected {
+    -fx-background-color: #e94560;
+}
+
+/* ===== PROGRESS INDICATOR ===== */
+.progress-indicator {
+    -fx-progress-color: #e94560;
+}
+
+/* ===== DIALOGS ===== */
+.dialog-pane {
+    -fx-background-color: #1a1a2e;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: linear-gradient(to right, #e94560, #f39c12);
+    -fx-padding: 15px;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.dialog-pane .content {
+    -fx-padding: 20px;
+}
+
+.dialog-pane .content .label {
+    -fx-text-fill: #e0e0e0;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #e94560;
+    -fx-text-fill: white;
+}
+
+/* ===== TOOLTIPS ===== */
+.tooltip {
+    -fx-background-color: #1a1a2e;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 3);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes pulse {
+    0% { -fx-opacity: 1.0; }
+    50% { -fx-opacity: 0.7; }
+    100% { -fx-opacity: 1.0; }
+}
+
+/* ===== ALERT DIALOGS ===== */
+.alert {
+    -fx-background-color: #1a1a2e;
+}
+
+.alert .dialog-pane {
+    -fx-background-color: #1a1a2e;
+    -fx-border-color: #e94560;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.alert .dialog-pane .button-bar {
+    -fx-padding: 10px;
+}
