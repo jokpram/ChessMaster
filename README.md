@@ -166,7 +166,7 @@ MIT License - Feel free to use and modify!
 
 ## Credits
 
-Built with ❤ using:
+Built using:
 - Java 21
-- JavaFX 21
+- Java Swing
 - Gradle with Kotlin DSL
