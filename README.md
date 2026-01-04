@@ -1,6 +1,6 @@
 # ♛ ChessMaster Pro
 
-A professional desktop chess game built with Java and JavaFX featuring an intelligent AI opponent.
+A professional desktop chess game built with Java and Java Swing featuring an intelligent AI opponent.
 
 ## Features
 
